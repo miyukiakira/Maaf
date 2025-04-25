@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permohonan Maaf</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Teruntuk Sri Purnama Dewi Tercinta</h1>
+        <div class="heart-animation">
+            <div class="heart"><img src="bahan/photo1.jpg">
+            </div>
+        </div>
+        <p>Dalam setiap detak jantungku, ada penyesalan yang mendalam atas kesalahan yang telah aku buat. Aku ingin kamu tahu betapa berharganya dirimu bagiku.</p>
+        <p>Maaf sudah bikin kamu marah, Maaf sudah bikin kamu kecewa, Maaf atas semua perbuatanku yang membuat hatimu terluka.</p>
+        <p>Aku harap kita bisa komunikasikan sama-sama, karena kunci suatu hubungan adalah komunikasi.</p>
+        <h5>"Setiap harapan pasti ada halangan, dan setiap tujuan pasti ada ujian,ini hanya TIDAK MUDAH bukan TIDAK MUNGKIN."</h5>
+        <p></p>
+        <h5>Maukah kamu memaafkan aku?</h5>
+        <div class="button-container">
+            <button type="submit" class="btn" onclick="openPopup()" >Iya</button>
+            <div id="popup" class="popup">
+                <h2>Maaciw Tayangkuhh</h2>
+                <p>Kedepanya aku usahain buat selalu ada untuk kamu dan selalu ngertiin kamu</p>
+                <h3>Love U</h3>
+                <img src="bahan/photo3.jpg">
+            </div>
+
+            <button type="submit" class="btn" onclick="openPopupNo()">Nga</button>
+            <div id="popupNo" class="popupNo">
+                <h2>Aaaaaa... jangan gitu lah sayaang</h2>
+                <p>Maafin aku ya sayaang.</p>
+                <p>Tuh tombol Nga nya dah aku hilangin hehe</p>
+
+                <img src="bahan/photo2.jpg">
+
+                <button type="submit" class="btn" onclick="openPopup()" >Iya</button>
+                <div id="popup" class="popup">
+                    <h2>Maaciw Tayangkuhh</h2>
+                    <p>Kedepanya aku usahain buat selalu ada untuk kamu dan selalu ngertiin kamu</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio autoplay src="bahan/Raim Laode - Lesung Pipi  video lirik official .mp3"></audio>
+
+    <script>
+        // Mendapatkan elemen dari DOM
+        let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+            popupNo.classList.remove("open-popup-no");
+        }
+
+        let popupNo = document.getElementById("popupNo");
+
+        function openPopupNo(){
+            popupNo.classList.add("open-popup-no");
+        }
+
+    </script>
+</body>
+</html>
